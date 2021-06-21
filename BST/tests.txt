@@ -1,0 +1,111 @@
+// TEST 1
+BST b = new BST();
+b.insert(19);
+b.insert(11);
+b.insert(23);
+b.insert(19);
+b.insert(29);
+b.printPreorder();
+b.printInorder();
+b.printPostorder();
+
+//TEST 2
+BST b = new BST();
+b.insert(19);
+b.printNodeComparisons();
+b.insert(11);
+b.insert(23);
+b.insert(31);
+b.insert(42);
+b.insert(29);
+System.out.println(b.find(29));
+b.insert(23);
+b.insert(29);
+b.delete(31);
+System.out.println(b.find(31));
+System.out.println(b.find(23));
+b.printInorder();
+b.printNodeComparisons();
+
+//TEST 3
+BST b = new BST();
+b.insert(19);
+b.insert(19);
+b.insert(19);
+b.insert(11);
+b.insert(9);
+b.insert(11);
+b.printInorder();
+b.delete(23);
+b.insert(23);
+b.insert(17);
+b.insert(20);
+b.insert(18);
+b.insert(25);
+b.printInorder();
+b.delete(19);
+b.delete(19);
+b.delete(11);
+b.delete(11);
+b.delete(23);
+System.out.println(b.find(19));
+b.printPreorder();
+
+//TEST 4
+BST b = new BST();
+b.insert(19);
+b.insert(19);
+System.out.println(b.find(19));
+b.delete(19);
+System.out.println(b.find(19));
+b.delete(19);
+System.out.println(b.find(19));
+b.insert(19);
+b.insert(9);
+b.insert(23);
+b.insert(11);
+b.insert(21);
+b.insert(31);
+b.insert(11);
+b.printPostorder();
+b.delete(19);
+b.delete(11);
+System.out.println(b.find(19));
+System.out.println(b.find(11));
+b.delete(11);
+b.printPostorder();
+
+//TEST 5
+BST b = new BST();
+b.insert(29);
+b.insert(15);
+b.insert(43);
+b.insert(7);
+b.insert(23);
+b.insert(35);
+b.insert(51);
+b.delete(29);
+b.printPreorder();
+b.printNodeComparisons();
+
+TEST 6
+BST b = new BST();
+b.insert(29);
+b.insert(15);
+b.insert(43);
+b.insert(5);
+b.insert(23);
+b.insert(35);
+b.insert(51);
+b.insert(3);
+b.insert(7);
+b.insert(19);
+b.insert(27);
+b.insert(31);
+b.insert(37);
+b.insert(47);
+b.insert(59);
+b.delete(15);
+b.delete(43);
+b.printPreorder();
+b.printPostorder();

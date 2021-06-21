@@ -1,0 +1,116 @@
+// TEST 1
+HTB ht = new HTB(7,13,5,11);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.find(19);
+ht.delete(19);
+ht.delete(29);
+ht.find(19);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.printKeys();
+
+// TEST 2
+HTB ht = new HTB(7,13,5,11);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.insert(19);
+ht.insert(29);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.insert(99);
+ht.insert(129);
+ht.printKeys();
+ht.printCollisions();
+
+// TEST 3
+HTB ht = new HTB(7,3,5,7);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.insert(19);
+ht.insert(29);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.insert(99);
+ht.insert(129);
+ht.printKeys();
+ht.printCollisions();
+
+// TEST 4
+HTB ht = new HTB(7,3,5,7);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.insert(19);
+ht.insert(29);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.insert(99);
+ht.insert(129);
+ht.delete(11);
+ht.insert(11);
+ht.printKeys();
+ht.printCollisions();
+
+// TEST 5
+HTB ht = new HTB(7,3,5,7);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.insert(19);
+ht.insert(29);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.insert(99);
+ht.insert(129);
+ht.delete(11);
+ht.insert(11);
+ht.delete(17);
+ht.insert(17);
+ht.delete(2);
+ht.insert(2);
+ht.printKeys();
+ht.printCollisions();
+
+// TEST 6
+HTB ht = new HTB(11,13,5,7);
+ht.insert(19);
+ht.insert(11);
+ht.insert(23);
+ht.insert(19);
+ht.insert(29);
+ht.insert(17);
+ht.insert(2);
+ht.insert(33);
+ht.insert(99);
+ht.insert(129);
+ht.delete(11);
+ht.insert(17);
+ht.delete(17);
+ht.insert(2);
+ht.delete(2);
+ht.insert(11);
+ht.printKeys();
+ht.find(129);
+ht.delete(129);
+ht.find(129);
+ht.insert(119);
+ht.insert(211);
+ht.insert(123);
+ht.insert(159);
+ht.insert(129);
+ht.insert(217);
+ht.insert(12);
+ht.insert(233);
+ht.insert(299);
+ht.insert(429);
+ht.printKeys();
+ht.printCollisions();
